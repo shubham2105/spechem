@@ -1,24 +1,32 @@
-import logo from './logo.svg';
 import './App.css';
+import Carousel from './components/Carousel';
+import Footer from './components/Footer';
+import Header from './components/Header';
+import ProductCards from './components/ProductCards';
+//import Hero from './components/Hero';
+
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+    <>
+      <Header/>
+      <Carousel/>
+      <div class="flex items-center justify-center">
+        <div class="text-center text-black">
         <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+                Specialty Chemicals manufactures a range of Specialty Chemicals and
+                Water soluble polymers for applications in various indusrty
+                segments.
+            </p>
+        </div>
+      </div>
+      <ProductCards/>
+      
+
+      <Footer/>
+    </>
+   
   );
 }
 
